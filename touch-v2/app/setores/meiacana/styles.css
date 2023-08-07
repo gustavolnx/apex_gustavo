@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("../../../fonts/Montserrat-Black.ttf");
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+}
+
+html,
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+body {
+  background-color: #171717;
+  background-image: url("./background.png");
+}
+
+.btn {
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn > img {
+  position: absolute;
+  width: 75%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.geral {
+  position: absolute;
+  top: calc(65% - 15px);
+  left: calc(28% - 5px);
+  transform: translate(-50%, -50%);
+  background-color: rgba(55, 119, 187, 0.7);
+  height: 210px;
+  width: 930px;
+  border: 1px solid #fff;
+  border-radius: 150px;
+}
+.geral .text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Montserrat Black";
+  font-size: 20px;
+  color: #fff;
+}
+.geral .text .text1 {
+  position: relative;
+  left: 10%;
+  text-align: start;
+  font-size: 55px;
+}
+.geral .text .text2 {
+  position: relative;
+  left: 10%;
+  text-align: start;
+  font-size: 65px;
+}
+
+.martelete {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 50.1%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(55, 119, 187, 0.7);
+}
+.martelete .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Montserrat Black";
+  color: #fff;
+}
+
+.picagem {
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 50.1%;
+  left: 84.3%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(58, 58, 58, 0.7);
+}
+.picagem .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Montserrat Black";
+  color: #fff;
+}
+
+.retifica {
+  display: none;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 78%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(21, 79, 140, 0.7);
+}
+.retifica .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Montserrat Black";
+  color: #fff;
+}
+
+.laminakarvour {
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 78%;
+  left: 84.3%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(6, 48, 92, 0.7);
+}
+.laminakarvour .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat Black";
+  color: #fff;
+}
+
+.btn.back {
+  border-radius: 50%;
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  height: 100px;
+  width: 100px;
+}
+
+.btn1 {
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 49.1%;
+  left: 78.4%;
+  transform: translate(-50%, -50%);
+  width: 825.2px;
+  height: 220px;
+  background-color: rgb(58, 58, 58);
+}
+.btn1 .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Montserrat Black";
+  color: #fff;
+}
+
+.btn2 {
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 69.5%;
+  left: 78.4%;
+  transform: translate(-50%, -50%);
+  width: 825.2px;
+  height: 220px;
+  background-color: rgb(6, 48, 92);
+}
+.btn2 .text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 45px;
+  font-family: "Montserrat Black";
+  color: #fff;
+}
+
+.btn3 {
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 90%;
+  left: 78.4%;
+  transform: translate(-50%, -50%);
+  width: 825.2px;
+  height: 220px;
+  background-color: rgb(55, 119, 187);
+}
+.btn3 .text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 45px;
+  font-family: "Montserrat Black";
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */

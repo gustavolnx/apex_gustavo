@@ -1,0 +1,251 @@
+:root {
+  @font-face {
+    font-family: "Montserrat Black";
+    src: url("../../../../../fonts/Montserrat-Black.ttf");
+  }
+}
+
+* {
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+html,
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+body {
+  background-color: #171717;
+  background-image: url("./background.png");
+}
+.text {
+  text-decoration: none;
+  position: absolute;
+  width: 1300px;
+  top: 30%;
+  letter-spacing: 2px;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Montserrat Black";
+  font-size: 43px;
+}
+
+.text > div {
+  display: inline;
+}
+
+.chevron > img {
+  height: 30px;
+  margin-bottom: 2.5px;
+}
+
+.btn {
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn > img {
+  position: absolute;
+  width: 75%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn.home {
+  border-radius: 50%;
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  height: 100px;
+  width: 100px;
+}
+
+.btn.back {
+  border-radius: 50%;
+  position: absolute;
+  top: 75%;
+  left: 6%;
+  height: 100px;
+  width: 100px;
+}
+
+.btn1 > .text {
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 43px;
+  // border: 1px solid red;
+}
+
+.btn1 {
+  transform: translate(-50%, -50%);
+  background-color: rgb(55, 119, 187);
+  border: 1px solid #fff;
+}
+.btn1:hover {
+  cursor: pointer;
+}
+
+.btn1.btn-0 {
+  border-radius: 100px;
+  position: absolute;
+  top: 55%;
+  left: calc(20% + 220px);
+  height: 125px;
+  width: 350px;
+}
+.btn1.btn-1 {
+  border-radius: 100px;
+  position: absolute;
+  top: 55%;
+  left: calc(40% + 220px);
+  height: 125px;
+  width: 350px;
+}
+
+.btn1.btn-2 {
+  position: absolute;
+  top: 55%;
+  left: calc(60% + 220px);
+  border-radius: 100px;
+  height: 125px;
+  width: 350px;
+}
+
+.btn1.btn-3 {
+  border-radius: 100px;
+  position: absolute;
+  top: 55%;
+  left: calc(80% + 220px);
+  height: 100px;
+  width: 300px;
+}
+
+.btn1.btn-4 {
+  border-radius: 100px;
+  position: absolute;
+  top: 70%;
+  left: calc(28% + 220px);
+  height: 100px;
+  width: 300px;
+}
+.btn1.btn-5 {
+  border-radius: 100px;
+  position: absolute;
+  top: 70%;
+  left: calc(48% + 220px);
+  height: 100px;
+  width: 300px;
+}
+.btn1.btn-6 {
+  border-radius: 100px;
+  position: absolute;
+  top: 70%;
+  left: calc(68% + 220px);
+  height: 100px;
+  width: 300px;
+}
+
+.btn2 > .text {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+}
+
+.btn2 {
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+}
+.btn2:hover {
+  cursor: pointer;
+}
+
+.btn2.btn-7 {
+  border-radius: 100px;
+  position: absolute;
+  top: 75%;
+  left: calc(29% + 43px);
+  height: 125px;
+  width: 420px;
+}
+.btn2.btn-8 {
+  border-radius: 100px;
+  position: absolute;
+  top: 75%;
+  left: calc(60% + 43px);
+  height: 125px;
+  width: 700px;
+}
+
+.btn2.btn-8 > .text {
+  width: 700px;
+}
+
+.icons {
+  position: absolute;
+  top: 36%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+}
+.icons-btn {
+  position: absolute;
+  top: 60%;
+  left: -29%;
+}
+.icon {
+  display: inline;
+}
+.triangle {
+  position: absolute;
+  top: -53px;
+  left: 375px;
+  $size: 75px;
+  width: $size;
+  height: $size;
+}
+.square {
+  position: absolute;
+  top: -55px;
+  left: 450px;
+  $size: 85px;
+  width: $size;
+  height: $size;
+}
+.circle {
+  position: absolute;
+  top: -63px;
+  left: 520px;
+  $size: 100px;
+  width: $size;
+  height: $size;
+}
+
+.spacing {
+  display: inline-block !important;
+  width: 220px !important;
+}

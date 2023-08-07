@@ -1,0 +1,104 @@
+:root {
+  @font-face {
+    font-family: "Montserrat Black";
+    src: url("../../fonts/Montserrat-Black.ttf");
+  }
+}
+
+* {
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+html,
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #171717;
+  background-image: url("./background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation {
+  margin-top: 280px;
+}
+
+.btn {
+  width: 480px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Montserrat Black";
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  .text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    hr {
+      border: 2px solid #fff;
+      width: 40%;
+    }
+  }
+}
+.btn-0 {
+  background-image: url("./images/btn-0.png");
+}
+.btn-1 {
+  background-image: url("./images/btn-1.png");
+}
+.btn-2 {
+  background-image: url("./images/btn-2.png");
+}
+.btn-3 {
+  background-image: url("./images/btn-3.png");
+}
+.btn-4 {
+  background-image: url("./images/btn-4.png");
+}
+.btn-5 {
+  background-image: url("./images/btn-5.png");
+}
+.btn-6 {
+  background-image: url("./images/btn-6.png");
+}
+.btn-7 {
+  background-image: url("./images/btn-7.png");
+}
+.btn-8 {
+  background-image: url("./images/btn-8.png");
+}
+.btn-9 {
+  background-image: url("./images/btn-9.png");
+}
+
+.row-0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

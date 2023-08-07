@@ -1,0 +1,279 @@
+:root {
+  @font-face {
+    font-family: "Montserrat Black";
+    src: url("/apex/touch-v2/fonts/Montserrat-Black.ttf");
+  }
+}
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+html,
+body {
+  overflow: hidden;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+body {
+  background-image: url("./background.png");
+}
+
+.btn {
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn > img {
+  position: absolute;
+  width: 75%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.geral {
+  position: absolute;
+  top: 68%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(55, 119, 187, 0.7);
+  height: 180px;
+  width: 625px;
+  border: 1px solid #fff;
+  border-radius: 86px 86px 86px 86px;
+  .text {
+    font-family: "Montserrat Black";
+    font-size: 20px;
+    color: #fff;
+    .text1 {
+      position: absolute;
+      left: 40px;
+      top: 10px;
+      text-align: start;
+      font-size: 90px;
+    }
+    .icon {
+      display: inline;
+    }
+    .triangle {
+      position: absolute;
+      top: calc(-53px + 80px);
+      left: 375px;
+      $size: 75px;
+      width: $size;
+      height: $size;
+    }
+    .square {
+      position: absolute;
+      top: calc(-55px + 80px);
+      left: 450px;
+      $size: 85px;
+      width: $size;
+      height: $size;
+    }
+    .circle {
+      position: absolute;
+      top: calc(-63px + 80px);
+      left: 520px;
+      $size: 100px;
+      width: $size;
+      height: $size;
+    }
+    .text2 {
+      position: absolute;
+      top: 115px;
+      left: 46px;
+      text-align: start;
+      font-size: 24px;
+    }
+  }
+}
+
+.martelete {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 50.2%;
+  left: 53.1%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(55, 119, 187, 0.7);
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat Black";
+    color: #fff;
+  }
+}
+
+.picagem {
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 50.2%;
+  left: 84.3%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(58, 58, 58, 0.7);
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat Black";
+    color: #fff;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline;
+  }
+  .circle {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    $size: 100px;
+    width: $size;
+    height: $size;
+  }
+}
+
+.retifica {
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 78%;
+  left: 53.1%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(21, 79, 140, 0.7);
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat Black";
+    color: #fff;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline;
+  }
+  .triangle {
+    position: absolute;
+    top: 75%;
+    left: calc(50% - 10%);
+    transform: translate(-50%, -50%);
+    $size: 75px;
+    width: $size;
+    height: $size;
+  }
+  .square {
+    position: absolute;
+    top: calc(75% + 2.5px);
+    left: calc(70% - 10%);
+    transform: translate(-50%, -50%);
+    $size: 85px;
+    width: $size;
+    height: $size;
+  }
+}
+
+.laminakarvour {
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 78%;
+  left: 84.3%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: rgba(6, 48, 92, 0.7);
+  .text {
+    width: 335px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat Black";
+    color: #fff;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline;
+  }
+  .triangle {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    $size: 75px;
+    width: $size;
+    height: $size;
+  }
+  .square {
+    position: absolute;
+    top: calc(75% + 2.5px);
+    left: 70%;
+    transform: translate(-50%, -50%);
+    $size: 85px;
+    width: $size;
+    height: $size;
+  }
+  .circle {
+    position: absolute;
+    top: calc(75% - 50px);
+    left: 25%;
+    position: absolute;
+    $size: 100px;
+    width: $size;
+    height: $size;
+  }
+}
+.row {
+  display: flex;
+}
+
+.text1 {
+  margin-right: 20px;
+  display: inline;
+}
+
+.btn.back {
+  border-radius: 50%;
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  height: 100px;
+  width: 100px;
+}

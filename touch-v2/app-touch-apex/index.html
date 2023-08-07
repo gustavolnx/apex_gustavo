@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Touch v2</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="./jquery.js"></script>
+    <style>
+      * {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+      @font-face {
+        font-family: MontserratBold;
+        src: url(/apex/touch-v2/fonts/Montserrat-Bold.ttf);
+      }
+
+      @font-face {
+        font-family: MontserratRegular;
+        src: url(/apex/touch-v2/fonts/Montserrat-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: MontserratExtraBold;
+        src: url(/apex/touch-v2/fonts/Montserrat-ExtraBold.ttf);
+      }
+
+      @font-face {
+        font-family: "Montserrat Black";
+        src: url("/apex/touch-v2/fonts/Montserrat-Black.ttf");
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #15171b;
+        background-image: url("./assets/bg.png");
+        background-size: cover;
+      }
+
+      .home {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+
+        width: 100px;
+      }
+
+      .home img {
+        width: 100%;
+      }
+
+      .abs {
+        position: absolute;
+        top: 74%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .abs img {
+        width: 100%;
+      }
+
+      .ope {
+        position: absolute;
+        top: 74%;
+        left: 86.9%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .ope img {
+        width: 100%;
+      }
+
+      .gas {
+        position: absolute;
+        top: 74%;
+        left: 33.5%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .gas img {
+        width: 100%;
+      }
+
+      .inv {
+        display: none;
+        position: absolute;
+        top: 90%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .inv img {
+        display: none;
+        width: 100%;
+      }
+
+      .scr {
+        position: absolute;
+        top: 74%;
+        left: 51.2%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .scr img {
+        width: 100%;
+      }
+
+      .com {
+        position: absolute;
+        top: 90%;
+        left: 33.5%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .com img {
+        width: 100%;
+      }
+
+      .btn.btn6 {
+        position: absolute;
+        top: 90%;
+        left: 15.9%;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+        width: 300px;
+        height: 98px;
+        background-color: #3777bb;
+        border: 2px solid #fff;
+      }
+      .btn.btn6 > .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 33px;
+        font-weight: bold;
+        font-family: MontserratBold;
+      }
+
+      .btn.btn7 {
+        position: absolute;
+        top: 90%;
+        left: 86.9%;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+        width: 300px;
+        height: 98px;
+        background-color: #3777bb;
+        border: 2px solid #fff;
+      }
+      .btn.btn7 > .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 33px;
+        font-weight: bold;
+        font-family: MontserratBold;
+      }
+      .efi {
+        position: absolute;
+        top: 74%;
+        left: 68.9%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .efi img {
+        width: 100%;
+      }
+
+      .pro {
+        position: absolute;
+        top: 90%;
+        left: 51.2%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .pro img {
+        width: 100%;
+      }
+
+      .seg {
+        position: absolute;
+        top: 90%;
+        left: 68.9%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+      }
+
+      .seg img {
+        width: 100%;
+      }
+
+      .back {
+        position: absolute;
+        top: 90%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+
+        width: 200px;
+      }
+
+      .back img {
+        width: 100%;
+      }
+
+      .disabled {
+        opacity: 0.5;
+      }
+      .btn {
+        transform: translate(-50%, -50%);
+        background-color: rgba(7, 52, 110, 0.7);
+        border: 1px solid #fff;
+      }
+
+      .btn:hover {
+        cursor: pointer;
+      }
+
+      .btn > img {
+        position: absolute;
+        width: 75%;
+        height: 65%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn.back {
+        border-radius: 50%;
+        position: absolute;
+        top: 93%;
+        left: 3.3%;
+        height: 75px;
+        width: 75px;
+      }
+      .btn.home {
+        border-radius: 50%;
+        position: absolute;
+        top: 84%;
+        left: 3.3%;
+        height: 75px;
+        width: 75px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a id="back_btn" class="btn back">
+      <img src="../app/common/back.png" />
+    </a>
+    <div class="scr"><img src="./assets/abs.png" /></div>
+    <div class="pro"><img src="./assets/ope.png" /></div>
+    <div class="efi"><img src="./assets/gas.png" /></div>
+    <div class="ope"><img src="./assets/scra.png" /></div>
+    <div class="seg"><img src="./assets/com.png" /></div>
+    <div class="gas"><img src="./assets/efi.png" /></div>
+    <a href="./man/index.php" class="btn btn6"
+      ><div class="text">MANUTENÇÃO</div></a
+    >
+    <div class="com"><img src="./assets/pro.png" /></div>
+    <div class="abs"><img src="./assets/seg.png" /></div>
+    <a href="./5s/index.php" class="btn btn7"><div class="text">5S</div></a>
+    <script>
+      $("#back_btn").click(function () {
+        //History back
+        window.history.back();
+      });
+      $("#home_btn").click(function () {
+        //Redirect to ../app/index.php
+        window.location.href = "../app/hub/index.php";
+      });
+      function buttonAnimate(href) {
+        //Get position
+        var button = $(this);
+        var width = button.width();
+        var height = button.height();
+        //If button is not :animated
+        if (!button.is(":animated")) {
+          $(this).animate(
+            {
+              width: "+=10px",
+              height: "+=10px",
+            },
+            0,
+            function () {
+              $(this).animate(
+                {
+                  width: "-=10px",
+                  height: "-=10px",
+                },
+                0
+              );
+            }
+          );
+        }
+        setTimeout(function () {
+          window.location.href = href;
+        }, 0);
+      }
+
+      $(document).ready(function () {
+        $(".abs").click(function () {
+          buttonAnimate.call(this, "seg/index.php");
+        });
+        $(".gas").click(function () {
+          buttonAnimate.call(this, "efi/index.php");
+        });
+        $(".efi").click(function () {
+          buttonAnimate.call(this, "gas/index.php");
+        });
+        $(".ope").click(function () {
+          buttonAnimate.call(this, "scr/index.php");
+        });
+        $(".pro").click(function () {
+          buttonAnimate.call(this, "ope/index.php");
+        });
+        $(".inv").click(function () {
+          buttonAnimate.call(this, "inv/index.php");
+        });
+        $(".scr").click(function () {
+          buttonAnimate.call(this, "abs/index.php");
+        });
+        $(".com").click(function () {
+          buttonAnimate.call(this, "pro/index.php");
+        });
+        $(".seg").click(function () {
+          buttonAnimate.call(this, "com/index.php");
+        });
+      });
+    </script>
+  </body>
+</html>

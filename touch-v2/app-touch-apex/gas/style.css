@@ -1,0 +1,429 @@
+@font-face {
+  font-family: MontserratBold;
+  src: url(/apex/touch-v2/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: MontserratRegular;
+  src: url(/apex/touch-v2/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: MontserratExtraBold;
+  src: url(/apex/touch-v2/fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("/apex/touch-v2/fonts/Montserrat-Black.ttf");
+}
+* {
+  color: white;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #15171b;
+}
+
+.lines {
+  /* border: 5px solid red; */
+  display: inline-flex;
+  position: absolute;
+  top: 55%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 83%;
+  height: 64%;
+  background-image: url("lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.inside-box {
+  display: inline-flex;
+  position: absolute;
+  top: calc(100% - 20px);
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100%;
+  height: 80%;
+}
+
+.back-btn {
+  position: absolute;
+  top: calc(93% - 30px);
+  left: calc(2% - 5px);
+  width: 75px;
+  z-index: 1;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.midcon {
+  position: absolute;
+  z-index: 15;
+  background-color: #008dff;
+}
+
+.max {
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.mid {
+  background-color: #a8a8a8;
+  position: absolute;
+  z-index: 0;
+}
+
+.min {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.column {
+  margin-right: 5px;
+  height: 100%;
+  width: 48px;
+}
+
+.connectingLinesRed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.connectingLinesMidcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #008dff;
+  z-index: 15;
+}
+
+.connectingLinesWhite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #a8a8a8;
+  z-index: 0;
+}
+
+.connectingLinesGreen {
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  z-index: 10;
+}
+
+.day {
+  position: fixed;
+  top: calc(95% + 20px);
+  transform: translate(0%, 70%);
+  height: 40px;
+  width: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.day > .text {
+  margin-bottom: 10px;
+  color: #447dbb;
+  font-family: MontserratBold;
+  font-size: 15px;
+}
+
+.max_wattage {
+  position: fixed;
+  top: 22.5%;
+  left: calc(3.2% + 19px);
+  height: 60px;
+  color: #fff;
+  font-family: MontserratBold;
+  font-size: 23px;
+  text-align: end;
+  width: 150px;
+}
+
+.min_wattage {
+  position: fixed;
+  top: 83.2%;
+  left: calc(5.3% + 50px);
+  height: 60px;
+  color: #fff;
+  font-family: MontserratBold;
+  font-size: 23px;
+  text-align: end;
+  width: 80px;
+}
+
+.left-indicator {
+  font-size: 20px;
+  font-family: MontserratExtraBold;
+  color: #ffffff;
+  position: absolute;
+  top: 88%;
+  left: 9.8%;
+}
+
+.gas-dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.gas-max {
+  display: none;
+  position: absolute;
+  background-color: #0cb668;
+  z-index: 1;
+}
+
+.gas-mid {
+  position: absolute;
+  background-color: #008dff;
+  z-index: 12;
+}
+
+.gas-min {
+  position: absolute;
+  background-color: #a8a8a8;
+  z-index: 10;
+}
+
+.gas-column {
+  margin-right: 3px;
+  height: 100%;
+  width: 50px;
+  /* border: 5px solid red; */
+}
+
+.gas-day {
+  position: fixed;
+  top: calc(95% + 20px);
+  transform: translate(0%, 70%);
+  height: 40px;
+  width: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.gas-day > .gas-text {
+  margin-bottom: 10px;
+  color: #447dbb;
+  font-family: MontserratBold;
+  font-size: 15px;
+}
+
+.connectingLinesYellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #008dff;
+  z-index: 12;
+}
+
+.connectingLinesBlue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #a8a8a8;
+  z-index: 10;
+}
+
+.max_gas {
+  position: fixed;
+  top: 22.5%;
+  left: calc(3.2% + 90px);
+  height: 60px;
+  color: #fff;
+  font-family: MontserratBold;
+  font-size: 23px;
+  text-align: end;
+  width: 80px;
+}
+
+.min_gas {
+  position: fixed;
+  top: 83.2%;
+  left: calc(5.3% + 50px);
+  height: 60px;
+  color: #fff;
+  font-family: MontserratBold;
+  font-size: 23px;
+  text-align: end;
+  width: 80px;
+}
+
+.gas-left-indicator {
+  font-size: 20px;
+  font-family: MontserratExtraBold;
+  color: #ffffff;
+  position: absolute;
+  top: 88%;
+  left: 9.8%;
+}
+
+.loading {
+  background-color: #15171b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.btn {
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn > img {
+  position: absolute;
+  width: 75%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn.back {
+  border-radius: 50%;
+  position: absolute;
+  top: 93%;
+  left: 3.3%;
+  height: 75px;
+  width: 75px;
+}
+
+.btn-spendings {
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  top: calc(93% - 310px);
+  left: 3.3%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 64.3px;
+  z-index: 1;
+}
+
+.btn-spendings > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  filter: invert(100%);
+}
+
+.btn-power {
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  top: 82.5%;
+  left: 3.3%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 64.3px;
+  z-index: 1;
+}
+
+.btn-power > svg {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-gas {
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  top: 75%;
+  left: 3.3%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 64.3px;
+  z-index: 1;
+}
+
+.btn-gas > svg {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scene-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./gastosv2/background.png");
+}
+
+.scene-3 > #chartframe1 {
+  width: 78%;
+  height: 32%;
+  position: absolute;
+  top: 26%;
+  left: 57%;
+  transform: translate(-50%, 0%);
+}
+
+.scene-3 > #chartframe2 {
+  width: 60%;
+  height: 30%;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}/*# sourceMappingURL=style.css.map */

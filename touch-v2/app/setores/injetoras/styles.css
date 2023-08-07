@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("../../../fonts/Montserrat-Black.ttf");
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  overflow: hidden;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+}
+
+html,
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 1080px;
+  width: 1920px;
+}
+
+body {
+  background-color: #171717;
+  background-image: url("./background.png");
+}
+
+.btn {
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn > img {
+  position: absolute;
+  width: 75%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.geral {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 52, 110, 0.7);
+  height: 180px;
+  width: 625px;
+  border: 1px solid #fff;
+  border-radius: 86px 86px 86px 86px;
+}
+.geral .text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Montserrat Black";
+  font-size: 20px;
+  color: #fff;
+}
+.geral .text .text1 {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+}
+.geral .text .text2 {
+  width: 100%;
+  text-align: center;
+  font-size: 75px;
+}
+
+.btn.back {
+  border-radius: 50%;
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=styles.css.map */
