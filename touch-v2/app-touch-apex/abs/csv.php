@@ -1,6 +1,7 @@
 <?php
 // phpinfo();
 // header('Content-Type: text/plain;');
+header('Content-Type: application/json; charset=utf-8');
 $dir = scandir('../../app/setores/worker/csv/gastos/all/');
 foreach ($dir as $file) {
     if ($file != '.' && $file != '..') {
@@ -18,6 +19,12 @@ foreach ($dir as $file) {
                     $c++;
                     continue;
                 } else {
+                    if (strpos($data[0], 'M') !== false && strpos($data[0], 'dia') !== false) {
+                        $media = $data[15];
+                        $media = substr($media, 3);
+                        $media = (int)trim($media);
+                        // var_dump($media);
+                    }
                     if (strpos($data[0], 'Balan') !== false) {
                         $val = $data[15];
                         $balanço = $val;
@@ -36,7 +43,7 @@ foreach ($dir as $file) {
                     ### VALUE
                     if (isset($data[15]) !== false) {
                         $value = substr($data[15], 3);
-                        $value = trim($value);
+                        $value = (int)trim($value);
                         // var_dump($value);
                         if ($value > 1) {
                             $info[$c]["objetivo"] = $data[14];
@@ -76,3 +83,44 @@ foreach ($dir as $file) {
         // }
     }
 }
+
+// var_dump($info);
+
+$arrDias = array();
+foreach ($info as $key => $value) {
+    $arrDias[] = $value["day"];
+}
+// var_dump($arrDias);
+
+$arrObjetivo = array();
+foreach ($info as $key => $value) {
+    @$arrObjetivo[] = (int)substr($value["objetivo"], 0, 3);
+}
+$arrObjetivo = $arrObjetivo[0];
+// var_dump($arrObjetivo);
+
+$arrValue = array();
+$arrColors = array();
+foreach ($info as $key => $value) {
+    $arrValue[] = $value["value"];
+    if ($value["value"] > $arrObjetivo) {
+        $arrColors[] = "#008100";
+    } else {
+        $arrColors[] = "#FF0000";
+    }
+}
+// var_dump($arrValue);
+// var_dump($arrColors);
+$arrDias[] = "Média";
+// var_dump($media);
+$arrValue[] = $media;
+
+
+$json = array(
+    'days' => $arrDias,
+    'real' => $arrValue,
+    'objetivo' => $arrObjetivo,
+    'colors' => $arrColors,
+    'balance' => $balanço,
+);
+echo json_encode($json);
